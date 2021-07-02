@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@200;300;400;500;600;700;800;900&family=Fraunces:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+@import 'abstract/mixins';
+@import 'abstract/variables';
+
+@import 'base/animations';
+@import 'base/base';
+@import 'base/typography';
+@import 'base/utility';
+
+@import 'components/logo';
+@import 'components/nav-bar';
+@import 'components/left-right-blocks';
+@import 'components/btn-text';
+@import 'components/cards-testimonials';
+@import 'components/socials';
+
+@import 'layout/header';
+@import 'layout/hero';
+@import 'layout/about';
+@import 'layout/features';
+@import 'layout/testimonials';
+@import 'layout/gallery';
+@import 'layout/footer';

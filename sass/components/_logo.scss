@@ -1,0 +1,25 @@
+.logo {
+  display: flex;
+  align-items: center;
+  transition: all 0.4s;
+
+  .logo__text {
+    color: $color-primary;
+    padding: 0.8rem 0;
+    transition: all 0.4s;
+
+    &--white {
+      color: $color-white;
+      transition: all 0.4s;
+    }
+  }
+
+  &:hover {
+    .logo__text {
+      color: $color-white;
+      &--white {
+        color: rgba($color-white, 0.8);
+      }
+    }
+  }
+}

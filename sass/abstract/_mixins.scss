@@ -1,0 +1,43 @@
+// Media Query Manager
+/*
+0 - 414px         phone-port  --> Phone portrait mode
+414px - 736px     phone-land  --> Phone landscape mode
+736px - 1024      tab-port    --> Tablet portrait mode
+1024px - 1200px   tab-land    --> Tablet landscape mode 
+
+$breakpoint argument choices: 
+  -phone-port
+  -phone-land
+  -tab-port
+  -tab-land
+  
+
+ORDERS: Base + typography > General Layout + Grid > Page Layout > Components 
+
+1em = 16px;
+*/
+
+@mixin respond($breakpoint) {
+  @if $breakpoint == phone-port {
+    @media only screen and (max-width: 414px) {
+      @content;
+    } // 600px / 16px = 37.5em
+  }
+  @if $breakpoint == phone-land {
+    @media only screen and (max-width: 736px) {
+      @content;
+    } // 600px / 16px = 37.5em
+  }
+
+  @if $breakpoint == tab-port {
+    @media only screen and (max-width: 1024px) {
+      @content;
+    } // 900px / 16px = 56.25em
+  }
+
+  @if $breakpoint == tab-land {
+    @media only screen and (max-width: 1200px) {
+      @content;
+    } // 1200px / 16px = 75em
+  }
+}

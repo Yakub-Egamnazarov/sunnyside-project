@@ -1,0 +1,40 @@
+.btn-text {
+  display: inline-block;
+  position: relative;
+
+  color: $color-black;
+
+  &::before {
+    content: '';
+    display: block;
+    width: 110%;
+    height: 1rem;
+    border-radius: 10px;
+
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: -1;
+
+    transition: ease-in-out 0.4s;
+  }
+
+  &--yellow::before {
+    background-color: rgba($color-yellow, 0.4);
+  }
+
+  &--red::before {
+    background-color: rgba($color-red, 0.4);
+  }
+
+  &:hover {
+    &.btn-text--yellow::before {
+      background-color: rgba($color-yellow, 1);
+    }
+
+    &.btn-text--red::before {
+      background-color: rgba($color-red, 1);
+    }
+  }
+}

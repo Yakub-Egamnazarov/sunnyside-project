@@ -1,0 +1,68 @@
+.features {
+  width: 100%;
+  height: 58.8rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  @include respond(phone-land) {
+    flex-direction: column;
+    height: auto;
+  }
+}
+
+.feature {
+  position: relative;
+  width: 50%;
+  height: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50%, 50%;
+
+  @include respond(phone-land) {
+    width: 100vw;
+    height: 100vw;
+  }
+
+  @include respond(phone-port) {
+    height: 60rem;
+  }
+
+  &:nth-of-type(1) {
+    background-image: url(../img/desktop/image-graphic-design.jpg);
+
+    @include respond(phone-land) {
+      background-image: url(../img/mobile/image-graphic-design.jpg);
+    }
+  }
+  &:nth-of-type(2) {
+    background-image: url(../img/desktop/image-photography.jpg);
+
+    @include respond(phone-land) {
+      background-image: url(../img/mobile/image-photography.jpg);
+    }
+  }
+
+  &__content {
+    max-width: 33.6rem;
+    position: absolute;
+    bottom: 6rem;
+    left: 50%;
+    transform: translateX(-50%);
+
+    @include respond(tab-port) {
+      width: 90%;
+      max-width: 95%;
+    }
+
+    .heading-secondary {
+      margin-bottom: 2.5rem;
+      color: $color-black;
+    }
+
+    .text-feature {
+      color: $color-gray-dark;
+    }
+  }
+}

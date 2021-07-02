@@ -1,0 +1,30 @@
+.social {
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &__link {
+    width: 2rem;
+    height: 2rem;
+
+    &:not(:last-of-type) {
+      margin-right: 3rem;
+    }
+
+    svg {
+      path {
+        transition: all 0.4s;
+      }
+    }
+
+    &:hover {
+      svg {
+        path {
+          fill: rgba($color-white, 0.8);
+        }
+      }
+    }
+  }
+}

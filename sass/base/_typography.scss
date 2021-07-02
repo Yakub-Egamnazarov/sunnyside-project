@@ -1,0 +1,137 @@
+body {
+  font-family: 'Barlow', sans-serif;
+  font-weight: 600;
+  line-height: 2rem;
+  color: $color-black;
+}
+
+.logo__text {
+  font-family: 'Barlow', sans-serif;
+  font-size: 3.5rem;
+  line-height: 100%;
+  font-weight: 900;
+  letter-spacing: 0.03px;
+  text-decoration: none;
+}
+
+.nav-bar__link {
+  a {
+    font-family: 'Barlow', sans-serif;
+    font-size: 1.8rem;
+    font-weight: 700;
+    line-height: 100%;
+  }
+}
+
+.nav-bar__btn {
+  a {
+    font-family: 'Fraunces', serif;
+    font-size: 1.8rem;
+    font-weight: 700;
+    line-height: 100%;
+    letter-spacing: 0px;
+    text-transform: uppercase;
+  }
+}
+
+.hero {
+  &__heading {
+    font-family: 'Fraunces', serif;
+    font-size: 7rem;
+    font-weight: 700;
+    line-height: 100%;
+    letter-spacing: 0.045%;
+    text-transform: uppercase;
+    text-align: center;
+
+    @include respond(phone-land) {
+      font-size: 5rem;
+    }
+  }
+}
+
+.heading {
+  font-family: 'Fraunces', serif;
+  font-weight: 700;
+  line-height: 110%;
+
+  &-primary {
+    font-size: 4.8rem;
+
+    @include respond(phone-land) {
+      text-align: center;
+      font-size: 3.7rem;
+      line-height: 100%;
+    }
+  }
+
+  &-secondary {
+    font-size: 3.2rem;
+    text-align: center;
+  }
+}
+
+.heading-testimonial {
+  font-family: 'Fraunces', serif;
+  font-size: 2.2rem;
+  font-weight: 700;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  text-align: center;
+
+  @include respond(phone-land) {
+    font-size: 1.8rem;
+  }
+}
+
+.body-text__card {
+  line-height: 170%;
+  text-align: center;
+}
+
+.card__name {
+  font-family: 'Fraunces', serif;
+  font-weight: 700;
+  font-size: 2rem;
+  letter-spacing: 1.6px;
+  text-align: center;
+}
+
+.card__profession {
+  font-family: 'Barlow', sans-serif;
+  font-size: 1.4rem;
+  line-height: 179%;
+  text-align: center;
+}
+
+.body-text {
+  font-family: 'Barlow', sans-serif;
+  font-size: 1.8rem;
+  font-weight: 600;
+  line-height: 160%;
+
+  @include respond(phone-land) {
+    text-align: center;
+    line-height: 165%;
+    // letter-spacing: ;
+  }
+}
+
+.text-feature {
+  font-family: 'Barlow', sans-serif;
+  font-size: 1.6rem;
+  font-weight: 600;
+  line-height: 160%;
+  text-align: center;
+}
+
+.btn-text {
+  font-family: 'Fraunces', serif;
+  font-size: 1.8rem;
+  font-weight: 700;
+  line-height: 80%;
+  letter-spacing: 0;
+  text-transform: uppercase;
+  text-decoration: none;
+  text-align: center;
+}

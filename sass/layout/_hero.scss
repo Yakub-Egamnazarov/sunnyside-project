@@ -1,0 +1,45 @@
+.hero {
+  width: 100vw;
+  height: 78.6rem;
+  position: relative;
+
+  background-image: url('../img/desktop/image-header.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+
+  @include respond(phone-port) {
+    height: 53.8rem;
+    background-image: url('../img/mobile/image-header.jpg');
+  }
+
+  &__heading {
+    width: 100%;
+    position: absolute;
+    top: 20rem;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+
+    color: white;
+    animation: fade-in-top ease-in-out 0.4s forwards;
+
+    @include respond(phone-port) {
+      top: 14.8rem;
+    }
+  }
+
+  img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    animation: fade-in ease-in-out 0.4s 0.3s forwards;
+
+    @include respond(phone-port) {
+      top: 29rem;
+      transform: translateX(-50%);
+    }
+  }
+}
